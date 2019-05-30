@@ -1,0 +1,423 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End of meyer reset */
+	
+/* Start of Pockets of Scene */
+	body {
+		font-family: "helvetica neue", arial, non-serif;
+		font-size:100%;
+		background:#222;
+		color:lightgray;
+	}
+div {
+	margin:1.0em 0;
+}
+	h1, h2, h3, h4, p {
+		display:block;
+		color:white;
+		margin-bottom:2.0em;
+		font-weight:200;
+		letter-spacing: 0.05em;
+		clear:both;
+	}
+	h1, h2, h3, h4 {
+		text-transform: uppercase;
+	}
+	h1 {
+		margin-top:1.0em;
+		font-size:1.2em;
+		color: lightslategray;
+	}
+	a, a:visited {
+		text-decoration: none;
+		color:tomato;
+		
+	}
+	button {
+		color:black;
+		padding:0.5em;
+		background: mediumaquamarine;
+		height:2.8em;
+		font-size:1.0em;
+		border:0;
+		border-radius: 5px;
+		margin-right:0.15em;
+		text-transform: uppercase;
+	}
+	
+	textarea {
+		font-family: "helvetica neue", arial, non-serif;
+		min-height:10em;
+		color:#222;
+		width:100%;
+		font-size:0.8em;
+		background: lightcyan;
+		padding:0.5em;
+	}
+
+button {
+	color:darkslategray;
+}
+label {
+	color:darkkhaki;
+}
+	label[for="sortBy"], label[for="sortOrder"] {
+		text-transform:uppercase;
+		background: darkkhaki;
+		padding:0.5em;
+		padding-right:2.0em;
+		border-radius:5px;
+		color:aliceblue;
+	}
+	label[for="sortBy"]:hover, label[for="sortOrder"] {
+		cursor: e-resize;
+	}
+label.pofs-active-radio {
+	color:#222;
+}
+	input {
+		font-size:0.8em;
+		padding:0.5em;
+		display:block;
+		margin-top:1.0em;
+		margin-bottom: 1.0em;
+		cursor:pointer;
+	}
+input:hover {
+	cursor: text;
+}
+	input[type="radio"] {
+		margin-right:1.0em;
+		margin-left:-1.5em;
+		margin-top:0.6em;
+		z-index: 9999999;
+	}
+input[type="radio"]:hover {
+	cursor:pointer;
+}
+	a:hover, a:active, button:hover, button:active, .pofs-button-active {
+		filter:brightness(140%);
+		cursor: pointer;
+	}
+	.pofs-active-radio {
+		filter:brightness(140%);
+	}
+	i {
+		color:black;
+	}
+	strong {
+		font-weight:bold;
+	}
+	em {
+		font-style: italic;
+	}
+	sup { 
+	  vertical-align: super;
+	  font-size: smaller;
+	}
+	sub { 
+	  vertical-align: sub;
+	  font-size: smaller;
+	}
+	ul, ol {
+		margin-left:2.0em;
+	}
+	ul {
+		list-style-type: disc;
+	}
+	ol {
+		list-style-type: decimal;
+	}
+
+	#pofs-error-message {
+		display:none;
+		padding:0.25em;
+		padding-left:1.0em;
+		width:50%;
+
+	}
+	#pofs-close-parent {
+		float:right;
+		padding-right:1.0em;
+		padding-top:0.4em;
+		color:white;
+	}
+#pofs-close-parent:hover {
+	color:#222;
+}
+	.pofs-highlight, #pofs-error-message {
+		color:white;
+		background:tomato;
+	}
+	
+	#pofs-wrapper {
+		width:90%;
+		margin:2.5em auto;
+		display: block;
+	}
+	#pofs-header {
+		margin-bottom: 1.0em;
+	}
+	#pofs-main {
+		margin-top:4.0em;
+	}
+	#pofs-footer {
+		position:fixed;
+		left:0;
+		bottom:0em;
+		background:#333;
+		width:100%;
+		text-align:center;
+		padding:1.0em;
+		font-size:0.8em;
+		color:gray;
+	}
+	#pofs-logo {
+		margin-left:-1.0em;
+	}
+	#pofs-logo a {
+		background:transparent;
+	}
+	#pofs-logo img{
+		width:20%;
+	}
+
+	#pofs-main-menu {
+		position:absolute;
+		top:2.0em;
+		right:2.0em;
+	}
+
+	.pofs-button-set {
+		display:flex;
+		margin-top:1.0em;
+	}
+	
+	.pofs-display-flex {
+		display: flex;
+		margin-right:0.25em;
+	}
+	.pofs-display-flex-space-between {
+		display: flex;
+		justify-content: space-between;
+	}
+	.pofs-display-flex div{
+		margin-right:1.0em;
+	}
+	.pofs-display-flex a {
+		background: cadetblue;
+		height:1.0em;
+		border-radius: 2px;
+		margin-right:0.1em;
+	}
+	.pofs-col {
+		margin-right:1.0em;
+		
+	}
+	.pofs-row {
+		margin-top:1.0em;
+	}
+	.pofs-float-right {
+		float:right;
+	}
+
+
+/* pockets of scene authentication */
+	#pofs-authentication button{
+		background:aliceblue;
+		font-size:0.8em;
+	}
+/* pockets of scene text editor */
+	#pofs-html-converter-header {
+		display: flex;
+	}
+	#pofs-html-converter-header div, #pofs-html-converter-header button{
+		margin-bottom:0;
+	}
+	#pofs-html-converter-header button {
+		height:2.5em;
+		min-width:2.5em;
+	}
+	button[name="viewNotes"]:not(.pofs-button-active) {
+		color:white;
+	}
+	button[name="viewNotes"]:not(.pofs-button-active):hover {
+		color:#222;
+	}
+	button#pofs-ul div{
+		margin:-0.7em;
+	}
+	button#pofs-ol div {
+		font-size:0.005em;
+		font-weight:bold;
+		margin:0;
+		margin-top:-0.2em;
+	}
+	button#pofs-li div {
+		margin:-0.7em;
+		
+		font-weight:bolder;
+	}
+	.pofs-delete-button {
+		margin-top:2.0em;
+	}
+	#pofs-delete-all-notes {
+		filter:opacity(40%);
+	}
+	#pofs-delete-all-notes:hover {
+		cursor:not-allowed;
+	}
+	#pofs-blocks-container div{
+		background: #333333;
+		padding:1.0em 2.0em;
+		width:40%;
+		float:left;
+		line-height: 1.5em;
+		font-weight:300;
+		letter-spacing: 0.05em;
+
+	}
+#pofs-blocks-container div {
+	margin-right:2.0em;
+}
+	#pofs-blocks-container p {
+		margin-bottom:0;
+	}
+	#pofs-blocks-container div:focus{
+		outline:none;
+	}
+	#pofs-text-editor-mirror {
+		display: none;
+	}
+	#pofs-counter-container {
+		display: flex;
+		margin-top:1.0em;
+		float:right;
+	}
+	#pofs-counter-container button {
+		display:flex;
+		background: chocolate;
+		font-size:0.7em;
+		font-weight: bold;
+		margin-right: 0.5em;
+	}
+div#pofs-note-counter {
+	margin:0;
+}
+	#pofs-html-converter-header {
+		display: flex;
+		margin-bottom:0.5em;
+		clear:both;
+	}
+
+	.pofs-note-date {
+		font-size:0.8em;
+		color:tomato;	
+	}
+	.pofs-note-menu {
+		float:right;
+		font-size:0.8em;
+		margin-left:1.0em;
+	}
+	
+	.pofs-active-edit-block {
+		border:1px solid tomato !important;
+		margin-bottom:2.0em;
+		min-height:2.0em;
+		padding:1.0em;
+		background: lightcyan !important;
+		color:#222 !important;
+	}
+	.pofs-active-edit-block .pofs-note-date{
+		display: none;
+	}
+	.pofs-active-edit-block .pofs-note-title, .pofs-active-edit-block .pofs-note-category, .pofs-active-edit-block .pofs-note-content {
+		background: lightcyan;
+		color:black;
+		border: 1px solid tomato;
+		padding:0.5em;
+	}
+	#pofs-note-meta {
+		margin-top:1.0em;
+		display:flex;
+	}
+	#pofs-note-meta input {
+		margin-right:1.0em;
+	}
+	input#pofs-note-title {
+		width:50em;
+	}
+
+	input#pofs-note-category {
+		width:20em;
+	}
+	.pofs-note-title {
+		font-weight:400;
+	}
+	.pofs-note-category {
+		font-size:0.8em;
+		color:cadetblue;
+		font-style:italic;
+	}
+
+/* pockets of scene cryptocurrency price tracker */
+#pofs-crypto-prices-section {
+	border:1px solid aliceblue;
+	padding:2.0em;
+	font-size:.9em;
+	max-height:25.0em;
+	overflow-y:auto;
+}
+.pofs-crypto-price-feed p:first-child {
+	font-weight: 400;
+	font-size:1.1em;
+	background: #333;
+	padding:0.25em;
+}
